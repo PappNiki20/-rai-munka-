@@ -1,12 +1,15 @@
 body {
-    background-color:rgb(37, 37, 37);
+    background-color:rgb(42, 40, 40);
     color: white;
+    
+    
 }
 
 h1{
+    font-weight: bold;
     text-align: center;
-    font-size: xx-large;
-    font-optical-sizing: 50px;
+    font-size: 80px;
+    
     
 }
 #lista {
@@ -20,17 +23,22 @@ h1{
   
 }
 .container{
-   text-align: center;
-   margin-right: 150px;
-}
-
+    text-align: center;
+    padding: 0;
+    margin: 0;
+ }
+ 
 img {
-    align-self: center;
+    padding: 0;
+    margin: 10px;
+    text-align: left;
     width: 20%;
     max-width: 100px;
 }
 .tipusoslista {
-    text-align: justify;
+    padding: 0;
+    margin: 10px;
+    text-align: left;
     list-style-image: url(nyil2.png);
     list-style-type: none;
     list-style-position: inside;
@@ -40,39 +48,67 @@ img {
 
 .bekezdes1{
     margin: 0;
-    padding-right: 3px;
-    display: grid;
-    grid-template-columns:auto;
+    padding-left: 0;
+    
     
 }
-h2 {
-    margin-left: 15px;
+#jobblista {
+    text-align: left;
 }
+
+
+
+
 #bekezdes2{
+    text-align: center;
     border-right-style: solid;
     border-left-style: solid;
     border-width: 2px;
     border-color: red;
-    
-    margin: 5px;
-    padding-right: 3px;
-    grid-template-columns:auto;
-    
-}
-.masodikoldal {
-    background-color: black;
-    color: white;
+   padding: 0;
    
     
+}
+
+.masodikoldal {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-size: larger;
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 450px 400px;
+    
     
 }
-#bal {
-    float: right;
+#folyamatabra {
+    width: 80%;
+    max-width: 550px;
+    padding: 50px;
 }
-.vege {
-    clear: both;
+
+#rezs2_1{
+    padding-top: 50px;
+    padding-left: 0;
+    text-align: left;
+    
 }
+
+#cim2 {
+    font-weight: bolder;
+    text-align: left;
+    font-size: xx-large;
+    border-bottom-style: solid;
+    border-width: 2px;
+    border-color: red;
+    
+    
+}
+
 .bekezdes3{
+    float: right;
     margin: 0;
     padding-right: 3px;
     border-right-width: 2px;
@@ -80,14 +116,26 @@ h2 {
    
     
 }
+
+
 .tartalom {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    
-}
-@media only screen and (max-width:300px) {
-    .tartalom{
-        grid-template-columns:1fr;
    
+    margin: 90px;
+    display: grid;
+    grid-template-columns: 350px 350px 350px ;
+    grid-auto-rows: 640px 640px 640px;
+    align-content: center;
+    text-align: center;
+   
+}
+
+
+@media only screen and (max-width:600px) {
+    .tartalom{
+        grid-template-columns: 1fr;
+   
+    }
+    .masodikoldal  {
+        grid-template-columns: 1fr;
     }
 }
